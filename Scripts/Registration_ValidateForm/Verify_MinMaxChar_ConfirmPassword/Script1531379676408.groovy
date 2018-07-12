@@ -19,19 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://dev-vote.abs-cbn.com/login')
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputPassword2'), '!')
 
-WebUI.click(findTestObject('LoginPage_Objects/a_SIGN UP'))
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputPassword'), '!qazxsw2')
 
-WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputEmail'), 'dmdqanotvalidemail')
+WebUI.verifyElementPresent(findTestObject('ConfirmPassword_Object/label_Please enter at least 6'), 0)
 
-WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputFirstName'), 'Mark')
+WebUI.verifyElementText(findTestObject('ConfirmPassword_Object/label_Please enter at least 6'), 'Please enter at least 6 characters.')
 
-WebUI.verifyElementPresent(findTestObject('ValidationMessage_Objects/label_Please enter a valid ema'), 0)
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputPassword'))
 
-WebUI.verifyElementText(findTestObject('ValidationMessage_Objects/label_Please enter a valid ema'), 'Please enter a valid email address.')
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputPassword2'))
 
-WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputFirstName'))
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputPassword2'), '!qazxsw23edcvfr45tgbnhy67ujmki89olp01qazxsw23edcvfr4')
 
-WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputEmail'))
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputPassword'), '!qazxsw2')
+
+WebUI.verifyElementPresent(findTestObject('ConfirmPassword_Object/label_Please enter no more tha'), 0)
+
+WebUI.verifyElementText(findTestObject('ConfirmPassword_Object/label_Please enter no more tha'), 'Please enter no more than 30 characters.')
+
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputPassword2'))
 

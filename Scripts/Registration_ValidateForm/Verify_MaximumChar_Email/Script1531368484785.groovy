@@ -19,3 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputEmail'), 'dmdqamaxcharqwertyuiopasdfghjklzxcvbnmqazxswedcvfrtgbnhy@gmail.com')
+
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputFirstName'), 'Mark')
+
+WebUI.verifyElementPresent(findTestObject('ValidationMessage_Objects/label_Please enter no more tha'), 0)
+
+WebUI.verifyElementText(findTestObject('ValidationMessage_Objects/label_Please enter no more tha'), 'Please enter no more than 64 characters.')
+
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputFirstName'))
+
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputEmail'))
+

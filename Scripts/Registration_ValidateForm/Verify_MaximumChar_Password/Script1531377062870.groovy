@@ -19,19 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://dev-vote.abs-cbn.com/login')
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputPassword'), '!qazxsw23edcvfr45tgbnhy67ujmki89olp01qazxsw2')
 
-WebUI.click(findTestObject('LoginPage_Objects/a_SIGN UP'))
+WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputPassword2'), '!qazxsw2')
 
-WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputEmail'), 'dmdqanotvalidemail')
+WebUI.verifyElementPresent(findTestObject('ValidationMessage_Objects/label_Password should not grea'), 0)
 
-WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputFirstName'), 'Mark')
+WebUI.verifyElementText(findTestObject('ValidationMessage_Objects/label_Password should not grea'), 'Password should not greater than 30 characters.')
 
-WebUI.verifyElementPresent(findTestObject('ValidationMessage_Objects/label_Please enter a valid ema'), 0)
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputPassword'))
 
-WebUI.verifyElementText(findTestObject('ValidationMessage_Objects/label_Please enter a valid ema'), 'Please enter a valid email address.')
-
-WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputFirstName'))
-
-WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputEmail'))
+WebUI.clearText(findTestObject('RegistrationPage_Objects/input_inputPassword2'))
 

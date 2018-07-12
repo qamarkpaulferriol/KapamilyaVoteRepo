@@ -19,3 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_InvalidEmail'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MaximumChar_Email'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MaximumChar_FirstName'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MaximumChar_LastName'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MinimumChar_KN'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MaximumChar_KN'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MinimumChar_Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MaximumChar_Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Registration_ValidateForm/Verify_MinMaxChar_ConfirmPassword'), [:], FailureHandling.STOP_ON_FAILURE)
+

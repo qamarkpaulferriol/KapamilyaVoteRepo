@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regression_RegistrationValidation" time="20" tests="9" failures="0" errors="0">
+   <testsuite name="Regression_RegistrationValidation" tests="9" failures="0" errors="0" time="20" timestamp="2018-07-12 15:20:56" hostname="User - MARKPAULFERRIOL" id="Test Suites/Regression_RegistrationValidation">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Mark's Files to Transfer\\Katalon Studio\\Workspace\\KapamilyaVoteRepo\\Reports\\Regression_RegistrationValidation\\20180712_152054"/>
+         <property name="logFiles" value="D:\\Mark's Files to Transfer\\Katalon Studio\\Workspace\\KapamilyaVoteRepo\\Reports\\Regression_RegistrationValidation\\20180712_152054\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - MARKPAULFERRIOL"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.100.4"/>
+         <property name="sessionId" value="292bf72e9938e03a50618e48034abf5b"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_InvalidEmail" classname="Test Cases/Registration_ValidateForm/Verify_InvalidEmail" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:20:56 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_InvalidEmail: Test Cases/Registration_ValidateForm/Verify_InvalidEmail
+
+2018-07-12 15:20:56 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://dev-vote.abs-cbn.com/login'
+
+2018-07-12 15:21:08 - [MESSAGE][PASSED] - Browser is opened with url: 'https://dev-vote.abs-cbn.com/login'
+
+2018-07-12 15:21:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/LoginPage_Objects/a_SIGN UP' is clicked on
+
+2018-07-12 15:21:08 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage_Objects/a_SIGN UP' is clicked on
+
+2018-07-12 15:21:08 - [TEST_STEP][PASSED] - setText: Text 'dmdqanotvalidemail' is set on object 'Object Repository/RegistrationPage_Objects/input_inputEmail'
+
+2018-07-12 15:21:08 - [MESSAGE][PASSED] - Text 'dmdqanotvalidemail' is set on object 'Object Repository/RegistrationPage_Objects/input_inputEmail'
+
+2018-07-12 15:21:08 - [TEST_STEP][PASSED] - setText: Text 'Mark' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:09 - [MESSAGE][PASSED] - Text 'Mark' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:09 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' is present
+
+2018-07-12 15:21:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:09 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' is present
+
+2018-07-12 15:21:09 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' are matched.
+
+2018-07-12 15:21:09 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' are matched.
+
+2018-07-12 15:21:09 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputFirstName' is cleared
+
+2018-07-12 15:21:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputFirstName' is cleared
+
+2018-07-12 15:21:09 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputEmail' is cleared
+
+2018-07-12 15:21:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputEmail' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MaximumChar_Email" classname="Test Cases/Registration_ValidateForm/Verify_MaximumChar_Email" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:09 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MaximumChar_Email: Test Cases/Registration_ValidateForm/Verify_MaximumChar_Email
+
+2018-07-12 15:21:09 - [TEST_STEP][PASSED] - setText: Text 'dmdqamaxcharqwertyuiopasdfghjklzxcvbnmqazxswedcvfrtgbnhy@gmail.com' is set on object 'Object Repository/RegistrationPage_Objects/input_inputEmail'
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Text 'dmdqamaxcharqwertyuiopasdfghjklzxcvbnmqazxswedcvfrtgbnhy@gmail.com' is set on object 'Object Repository/RegistrationPage_Objects/input_inputEmail'
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - setText: Text 'Mark' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Text 'Mark' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter no more tha' is present
+
+2018-07-12 15:21:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter no more tha' is present
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter no more tha' are matched.
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter no more tha' are matched.
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputFirstName' is cleared
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputFirstName' is cleared
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputEmail' is cleared
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputEmail' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MaximumChar_FirstName" classname="Test Cases/Registration_ValidateForm/Verify_MaximumChar_FirstName" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:10 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MaximumChar_FirstName: Test Cases/Registration_ValidateForm/Verify_MaximumChar_FirstName
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - setText: Text 'dmdqavalidemail@gmail.com' is set on object 'Object Repository/RegistrationPage_Objects/input_inputEmail'
+
+2018-07-12 15:21:10 - [MESSAGE][PASSED] - Text 'dmdqavalidemail@gmail.com' is set on object 'Object Repository/RegistrationPage_Objects/input_inputEmail'
+
+2018-07-12 15:21:10 - [TEST_STEP][PASSED] - setText: Text 'Markqazxswedcvfrtgbnhyjumnkhiyorlejfk' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:11 - [MESSAGE][PASSED] - Text 'Markqazxswedcvfrtgbnhyjumnkhiyorlejfk' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:11 - [TEST_STEP][PASSED] - setText: Text 'Ferriol' is set on object 'Object Repository/Other_Objects/input_inputLastName'
+
+2018-07-12 15:21:11 - [MESSAGE][PASSED] - Text 'Ferriol' is set on object 'Object Repository/Other_Objects/input_inputLastName'
+
+2018-07-12 15:21:11 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_First name should not gr' is present
+
+2018-07-12 15:21:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:11 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_First name should not gr' is present
+
+2018-07-12 15:21:11 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_First name should not gr' are matched.
+
+2018-07-12 15:21:11 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_First name should not gr' are matched.
+
+2018-07-12 15:21:11 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputFirstName' is cleared
+
+2018-07-12 15:21:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputFirstName' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MaximumChar_LastName" classname="Test Cases/Registration_ValidateForm/Verify_MaximumChar_LastName" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:11 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MaximumChar_LastName: Test Cases/Registration_ValidateForm/Verify_MaximumChar_LastName
+
+2018-07-12 15:21:11 - [TEST_STEP][PASSED] - setText: Text 'Mark' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:11 - [MESSAGE][PASSED] - Text 'Mark' is set on object 'Object Repository/RegistrationPage_Objects/input_inputFirstName'
+
+2018-07-12 15:21:11 - [TEST_STEP][PASSED] - setText: Text 'Ferriolqazxswedcvfrtgbnhyujmkiolpqazxswe' is set on object 'Object Repository/RegistrationPage_Objects/input_inputLastName'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text 'Ferriolqazxswedcvfrtgbnhyujmkiolpqazxswe' is set on object 'Object Repository/RegistrationPage_Objects/input_inputLastName'
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - setText: Text 'validKN' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text 'validKN' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Last name should not gre' is present
+
+2018-07-12 15:21:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Last name should not gre' is present
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Last name should not gre' are matched.
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Last name should not gre' are matched.
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputLastName' is cleared
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputLastName' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MinimumChar_KN" classname="Test Cases/Registration_ValidateForm/Verify_MinimumChar_KN" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:12 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MinimumChar_KN: Test Cases/Registration_ValidateForm/Verify_MinimumChar_KN
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - setText: Text 'Ferriol' is set on object 'Object Repository/RegistrationPage_Objects/input_inputLastName'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text 'Ferriol' is set on object 'Object Repository/RegistrationPage_Objects/input_inputLastName'
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - setText: Text 'd' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text 'd' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name must be a' is present
+
+2018-07-12 15:21:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name must be a' is present
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name must be a' are matched.
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name must be a' are matched.
+
+2018-07-12 15:21:12 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName' is cleared
+
+2018-07-12 15:21:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MaximumChar_KN" classname="Test Cases/Registration_ValidateForm/Verify_MaximumChar_KN" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:12 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MaximumChar_KN: Test Cases/Registration_ValidateForm/Verify_MaximumChar_KN
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - setText: Text '1qazxsw23edcvfr45tgbnhy67ujmki89o0pl' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Text '1qazxsw23edcvfr45tgbnhy67ujmki89o0pl' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name should no' is present
+
+2018-07-12 15:21:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name should no' is present
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name should no' are matched.
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Kapamilya name should no' are matched.
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName' is cleared
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MinimumChar_Password" classname="Test Cases/Registration_ValidateForm/Verify_MinimumChar_Password" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:13 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MinimumChar_Password: Test Cases/Registration_ValidateForm/Verify_MinimumChar_Password
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - setText: Text 'dmdqaValidKN' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Text 'dmdqaValidKN' is set on object 'Object Repository/RegistrationPage_Objects/input_inputKapamilyaName'
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - setText: Text '!' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:13 - [MESSAGE][PASSED] - Text '!' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:13 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:14 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:14 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter at least 6' is present
+
+2018-07-12 15:21:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:14 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter at least 6' is present
+
+2018-07-12 15:21:14 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter at least 6' are matched.
+
+2018-07-12 15:21:14 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter at least 6' are matched.
+
+2018-07-12 15:21:14 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword' is cleared
+
+2018-07-12 15:21:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MaximumChar_Password" classname="Test Cases/Registration_ValidateForm/Verify_MaximumChar_Password" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:14 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MaximumChar_Password: Test Cases/Registration_ValidateForm/Verify_MaximumChar_Password
+
+2018-07-12 15:21:14 - [TEST_STEP][PASSED] - setText: Text '!qazxsw23edcvfr45tgbnhy67ujmki89olp01qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:14 - [MESSAGE][PASSED] - Text '!qazxsw23edcvfr45tgbnhy67ujmki89olp01qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:14 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:14 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:14 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Password should not grea' is present
+
+2018-07-12 15:21:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Password should not grea' is present
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Password should not grea' are matched.
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Password should not grea' are matched.
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword' is cleared
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword' is cleared
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword2' is cleared
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword2' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Registration_ValidateForm/Verify_MinMaxChar_ConfirmPassword" classname="Test Cases/Registration_ValidateForm/Verify_MinMaxChar_ConfirmPassword" status="PASSED">
+         <system-out><![CDATA[2018-07-12 15:21:15 - [TEST_CASE][PASSED] - Test Cases/Registration_ValidateForm/Verify_MinMaxChar_ConfirmPassword: Test Cases/Registration_ValidateForm/Verify_MinMaxChar_ConfirmPassword
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - setText: Text '!' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Text '!' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ConfirmPassword_Object/label_Please enter at least 6' is present
+
+2018-07-12 15:21:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Object 'Object Repository/ConfirmPassword_Object/label_Please enter at least 6' is present
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ConfirmPassword_Object/label_Please enter at least 6' are matched.
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ConfirmPassword_Object/label_Please enter at least 6' are matched.
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword' is cleared
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword' is cleared
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword2' is cleared
+
+2018-07-12 15:21:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword2' is cleared
+
+2018-07-12 15:21:15 - [TEST_STEP][PASSED] - setText: Text '!qazxsw23edcvfr45tgbnhy67ujmki89olp01qazxsw23edcvfr4' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:16 - [MESSAGE][PASSED] - Text '!qazxsw23edcvfr45tgbnhy67ujmki89olp01qazxsw23edcvfr4' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword2'
+
+2018-07-12 15:21:16 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:16 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/RegistrationPage_Objects/input_inputPassword'
+
+2018-07-12 15:21:16 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ConfirmPassword_Object/label_Please enter no more tha' is present
+
+2018-07-12 15:21:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-12 15:21:16 - [MESSAGE][PASSED] - Object 'Object Repository/ConfirmPassword_Object/label_Please enter no more tha' is present
+
+2018-07-12 15:21:16 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ConfirmPassword_Object/label_Please enter no more tha' are matched.
+
+2018-07-12 15:21:16 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ConfirmPassword_Object/label_Please enter no more tha' are matched.
+
+2018-07-12 15:21:16 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword2' is cleared
+
+2018-07-12 15:21:16 - [MESSAGE][PASSED] - Text of object 'Object Repository/RegistrationPage_Objects/input_inputPassword2' is cleared]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-12 15:20:56 - [TEST_SUITE][PASSED] - Regression_RegistrationValidation: Test Cases/Registration_ValidateForm/Verify_MinMaxChar_ConfirmPassword]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
