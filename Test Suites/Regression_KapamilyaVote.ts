@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Regression_RegistrationValidation</name>
+   <name>Regression_KapamilyaVote</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-07-12T15:20:54</lastRun>
-   <mailRecipient></mailRecipient>
+   <lastRun>2018-07-12T16:07:19</lastRun>
+   <mailRecipient>markpaulferriol@gmail.com;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
