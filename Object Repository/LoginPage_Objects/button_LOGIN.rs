@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_LOG IN</name>
+   <name>button_LOGIN</name>
    <tag></tag>
-   <elementGuidId>65d6b4c5-9d5a-4834-9874-22c95e33a6a0</elementGuidId>
+   <elementGuidId>baa912cd-1485-4bf6-8c33-02cdcdf63650</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -39,7 +39,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>LOG IN</value>
+      <value>LOGIN</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

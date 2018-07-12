@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_EmailAccountNotVerified</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>db742aa2-f2a9-48b5-ba40-d1bdb874e078</testCaseGuid>
+</TestCaseEntity>

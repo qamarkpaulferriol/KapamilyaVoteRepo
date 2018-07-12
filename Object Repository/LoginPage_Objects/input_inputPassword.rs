@@ -3,7 +3,7 @@
    <description></description>
    <name>input_inputPassword</name>
    <tag></tag>
-   <elementGuidId>9e8d5314-707b-4b61-a065-5e03df4f7ebc</elementGuidId>
+   <elementGuidId>3e625af1-ad26-4759-a4dd-d9cfc5f92137</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control ng-untouched ng-pristine ng-invalid</value>
+      <value>form-control ng-touched ng-dirty ng-valid</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +54,20 @@
       <name>ng-reflect-name</name>
       <type>Main</type>
       <value>inputPassword</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-invalid</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-reflect-model</name>
+      <type>Main</type>
+      <value>!qazxsw2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

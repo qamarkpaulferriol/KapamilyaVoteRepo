@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_Login_WithoutKN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99374e99-f8fd-43b9-828e-ec9704e66e4d</testCaseGuid>
+</TestCaseEntity>

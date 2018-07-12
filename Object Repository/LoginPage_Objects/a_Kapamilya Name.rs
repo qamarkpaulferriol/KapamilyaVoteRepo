@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Kapamilya Name</name>
    <tag></tag>
-   <elementGuidId>9b77ac4c-e9ab-4c1c-a98c-848e20f29fc1</elementGuidId>
+   <elementGuidId>0806699f-e89f-4ca6-8800-7cae4a1a3782</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

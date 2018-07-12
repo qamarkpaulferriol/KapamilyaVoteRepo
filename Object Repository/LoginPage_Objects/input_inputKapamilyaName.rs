@@ -3,7 +3,7 @@
    <description></description>
    <name>input_inputKapamilyaName</name>
    <tag></tag>
-   <elementGuidId>acb85d52-abfc-4ed5-811b-a0d72fe5d416</elementGuidId>
+   <elementGuidId>93e74688-136d-4e6a-b756-b831cc5b462c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control ng-untouched ng-pristine ng-invalid</value>
+      <value>form-control ng-dirty ng-touched ng-valid</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +54,20 @@
       <name>ng-reflect-name</name>
       <type>Main</type>
       <value>inputKapamilyaName</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-reflect-model</name>
+      <type>Main</type>
+      <value>dmdqa@gmail.com</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-invalid</name>
+      <type>Main</type>
+      <value>false</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
