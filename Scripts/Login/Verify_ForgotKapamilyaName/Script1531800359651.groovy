@@ -18,18 +18,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://dev-vote.abs-cbn.com/login')
 
-WebUI.setText(findTestObject('LoginPage_Objects/input_inputKapamilyaName'), 'dmdqanotvalid')
+WebUI.click(findTestObject('Forgot_Objects/a_Kapamilya Name'))
 
-WebUI.setText(findTestObject('LoginPage_Objects/input_inputPassword'), '!qazxsw2')
+WebUI.setText(findTestObject('Forgot_Objects/input_inputEmail'), 'dmdqa')
 
-WebUI.click(findTestObject('LoginPage_Objects/button_LOGIN'))
+WebUI.sendKeys(findTestObject('Forgot_Objects/input_inputEmail'), Keys.chord(Keys.TAB))
 
-WebUI.verifyElementPresent(findTestObject('LoginPage_Objects/p_Invalid Kapamilya Name or Pa'), 0)
+WebUI.verifyElementPresent(findTestObject('Forgot_Objects/lbl_InvalidEmailAddress'), 0)
 
-WebUI.verifyElementText(findTestObject('LoginPage_Objects/p_Invalid Kapamilya Name or Pa'), 'Invalid Kapamilya Name or Password.')
+WebUI.verifyElementText(findTestObject('Forgot_Objects/lbl_InvalidEmailAddress'), 'Please enter a valid email address.')
 
-WebUI.clearText(findTestObject('LoginPage_Objects/input_inputKapamilyaName'))
+WebUI.click(findTestObject('Other_Objects/Login/span_LOGIN'))
 

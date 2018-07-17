@@ -19,3 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.clearText(findTestObject('LoginPage_Objects/input_inputPassword'))
+
+WebUI.setText(findTestObject('LoginPage_Objects/input_inputKapamilyaName'), 'dmdqa@gmail.com')
+
+WebUI.verifyElementPresent(findTestObject('LoginPage_Objects/label_This field is required.'), 0)
+
+WebUI.verifyElementText(findTestObject('LoginPage_Objects/label_This field is required.'), 'This field is required.')
+

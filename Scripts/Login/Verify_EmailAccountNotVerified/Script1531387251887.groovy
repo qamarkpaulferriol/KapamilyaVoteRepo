@@ -25,5 +25,5 @@ WebUI.setText(findTestObject('LoginPage_Objects/input_inputKapamilyaName'), 'dmd
 
 WebUI.setText(findTestObject('LoginPage_Objects/input_inputPassword'), '!qazxsw2')
 
-WebUI.click(findTestObject('LoginPage_Objects/button_LOG IN'))
+WebUI.click(findTestObject('LoginPage_Objects/button_LOGIN'))
 

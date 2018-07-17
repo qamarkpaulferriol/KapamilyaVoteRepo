@@ -19,17 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://dev-vote.abs-cbn.com/login')
+WebUI.callTestCase(findTestCase('Login/Verify_LoginWithIncorrectCredentials'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('LoginPage_Objects/input_inputKapamilyaName'), 'dmdqanotvalid')
+WebUI.callTestCase(findTestCase('Login/Verify_LoginWithoutPassword'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('LoginPage_Objects/input_inputPassword'), '!qazxsw2')
+WebUI.callTestCase(findTestCase('Login/Verify_Login_WithoutKN'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('LoginPage_Objects/button_LOGIN'))
-
-WebUI.verifyElementPresent(findTestObject('LoginPage_Objects/p_Invalid Kapamilya Name or Pa'), 0)
-
-WebUI.verifyElementText(findTestObject('LoginPage_Objects/p_Invalid Kapamilya Name or Pa'), 'Invalid Kapamilya Name or Password.')
-
-WebUI.clearText(findTestObject('LoginPage_Objects/input_inputKapamilyaName'))
+WebUI.callTestCase(findTestCase('Login/Verify_ForgotKapamilyaName'), [:], FailureHandling.STOP_ON_FAILURE)
 

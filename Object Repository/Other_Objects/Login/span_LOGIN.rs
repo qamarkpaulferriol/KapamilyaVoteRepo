@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_LOGIN</name>
+   <tag></tag>
+   <elementGuidId>957999fb-cefd-41c2-bad1-214c81ff94e9</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>LOGIN</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;js history postmessage svg localstorage video hashchange cssgradients supports cssvhunit cssvwunit cssanimations appearance backgroundsize flexbox csstransforms csstransforms3d&quot;]/body[1]/div[@class=&quot;wrapper&quot;]/app-root[1]/app-header[1]/header[@class=&quot;main uninav-header uninav-default header-vote&quot;]/div[@class=&quot;right-container login-native-header inactive&quot;]/a[1]/span[1]</value>
+   </webElementProperties>
+</WebElementEntity>
