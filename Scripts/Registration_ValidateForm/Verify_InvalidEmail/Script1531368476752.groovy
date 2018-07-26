@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://dev-vote.abs-cbn.com/login')
 
-WebUI.click(findTestObject('LoginPage_Objects/a_SIGN UP'))
+WebUI.click(findTestObject('Other_Objects/Login/Sign_up/a_SIGN UP'))
 
 WebUI.setText(findTestObject('RegistrationPage_Objects/input_inputEmail'), 'dmdqanotvalidemail')
 
